@@ -29,3 +29,43 @@ Just as thousands of individual visual units contribute to an insect's perceptio
 - **Modular Drone Design** – Each drone operates as an individual unit, allowing the system to be expanded with additional drones.
 
 - **Scalable Swarm Concept** – The system explores how adding more drones can increase environmental coverage and provide more visual information.
+
+## 3D Model & CAD Design
+
+The OmniFLY micro-drone prototype features a compact quadcopter design with a focus on lightweight construction and efficient integration of onboard electronics.
+
+The 3D model was prepared in **3MF format**, containing the complete project geometry and individual structural elements arranged within a single project file.
+
+### 3D Model File
+
+| File | Description |
+|---|---|
+| `OmniFLY.3mf` | Complete 3D model of the micro-drone, including its structural components and camera housing. |
+
+The 3MF file is available in the `3D-Models` directory.
+
+---
+
+## Bill of Materials (BOM)
+
+The following table presents the selected hardware components for the OmniFLY prototype.
+
+| Component | Model / Specification | Quantity |
+|---|---|---:|
+| **Frame** | Kayoumini 2.5" Frame Kit | 1 |
+| **Flight Controller / ESC** | Flywoo GOKU F405 HD 1-2S ELRS V2 AIO | 1 |
+| **Brushless Motors** | GEPRC SPEEDX2 1202.5 – 10000KV | 4 |
+| **Propellers** | Gemfan 2520 | 1 set |
+| **Camera / Video Transmission** | DJI O4 Air Unit | 1 |
+| **Radio Receiver** | ExpressLRS (ELRS), integrated into AIO | 1 |
+| **Battery** | Flywoo Explorer 550mAh HV 2S 80C | 1 pack (2 batteries) |
+
+### Hardware Overview
+
+The selected configuration combines a compact 2.5-inch frame with four brushless motors and a 2S battery system.
+
+The Flywoo GOKU F405 AIO integrates the flight controller, ESC and ELRS receiver into a single board, helping reduce weight and simplify the electronics layout.
+
+The DJI O4 Air Unit provides onboard imaging and digital video transmission.
+
+This compact hardware platform is intended to serve as an individual aerial unit within the larger OmniFLY distributed imaging system.
