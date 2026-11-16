@@ -18,3 +18,14 @@ The core idea is simple:
 Just as thousands of individual visual units contribute to an insect's perception of the world, OMNIFLY explores how multiple autonomous flying units could work together to create a shared view of their surroundings.
 
 **Many Small Eyes. One Shared Vision.**
+## Key Features
+
+- **Distributed Aerial Vision** – Multiple drones observe different areas of the environment simultaneously, creating a broader field of view.
+
+- **Low-Cost Camera Systems** – Each drone uses an affordable camera instead of relying on one expensive imaging system.
+
+- **Collaborative Image Processing** – Individual images captured by different drones are combined into one unified picture.
+
+- **Modular Drone Design** – Each drone operates as an individual unit, allowing the system to be expanded with additional drones.
+
+- **Scalable Swarm Concept** – The system explores how adding more drones can increase environmental coverage and provide more visual information.
