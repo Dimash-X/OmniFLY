@@ -69,3 +69,55 @@ The Flywoo GOKU F405 AIO integrates the flight controller, ESC and ELRS receiver
 The DJI O4 Air Unit provides onboard imaging and digital video transmission.
 
 This compact hardware platform is intended to serve as an individual aerial unit within the larger OmniFLY distributed imaging system.
+## Software Architecture & Code Structure
+
+The OmniFLY software is organized into three main modules, separating the core Python package, ROS 2 integration, and simulation environment.
+
+### Project Structure
+
+```text
+OmniFLY/
+│
+├── omnifly_py/
+│   ├── examples/       # Example scripts and implementations
+│   ├── omnifly_py/     # Core Python package
+│   ├── resource/       # Package resources
+│   ├── test/           # Unit and package tests
+│   ├── package.xml
+│   ├── setup.cfg
+│   └── setup.py
+│
+├── omnifly_ros2/
+│   ├── config/         # Configuration files
+│   ├── launch/         # ROS 2 launch files
+│   ├── omnifly/        # ROS 2 package source code
+│   ├── resource/       # Package resources
+│   ├── test/           # Package tests
+│   ├── README.md
+│   ├── package.xml
+│   └── setup.py
+│
+└── omnifly_sim/
+    ├── config/         # Simulation configuration
+    ├── omnifly_sim/    # Simulation package source code
+    ├── resource/       # Package resources
+    └── test/           # Simulation tests
+```
+
+### Main Modules
+
+**1. `omnifly_py` – Core Python Package**
+
+Contains the main Python package, example implementations, and supporting resources. It provides the foundation for the project's Python-based software.
+
+**2. `omnifly_ros2` – ROS 2 Integration**
+
+Contains the ROS 2 package, including launch files, configuration files, and the source code required for integrating OmniFLY with the ROS 2 ecosystem.
+
+**3. `omnifly_sim` – Simulation Environment**
+
+Dedicated to the simulation component of OmniFLY. It contains simulation-related source files, configuration files, and supporting resources.
+
+### Development Approach
+
+The modular structure is intended to keep the core software, ROS 2 integration, and simulation components organized independently, making the project easier to maintain, develop, and extend.
