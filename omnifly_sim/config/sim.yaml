@@ -1,0 +1,38 @@
+# Replaces the `sim:` section of server.yaml
+sim:
+  backend: np              # np (physics) | none (drone jumps to its goal, fast)
+  pose_rate_hz: 100        # also the step rate of the visualizations
+  pose_noise_std: 0.002    # m, gaussian noise on the simulated mocap position
+  cmd_timeout: 0.3         # s, same failsafe as crsf_bridge
+  visualizations:          # see visualization folder for a list
+    rviz:
+      enabled: true
+    pdf:
+      enabled: false
+      output_file: "result.pdf"    # one file per drone: result_<name>.pdf
+    record_states:
+      enabled: false
+      output_dir: "state_info"
+      logging_time: 0.2
+      file_formats: ["csv", "np"]
+    blender:                       # needs bpy + data/model + data/env (see README)
+      enabled: false
+      fps: 1
+      cycle_bg: false
+      resolution: [320, 320]
+      fov_deg: 87
+      model_file: data/model/cf.obj   # put your own drone model here
+      cf_cameras:                  # drones that carry a camera
+        drone1:
+          calibration:
+            tvec: [0, 0, 0]
+            rvec: [1.2092, -1.2092, 1.2092]   # 0 deg tilt (looks forward)
+
+# APPROXIMATE: weigh the drone and measure thrust, then update.
+quadrotor:
+  mass: 0.08               # kg
+  thrust_to_weight: 3.0    # => hover throttle = 1/3
+  max_angle_deg: 55        # must match Betaflight angle limit
+  max_yaw_rate_deg: 200
+  attitude_tau: 0.06       # s
+  drag: 0.1                # 1/s

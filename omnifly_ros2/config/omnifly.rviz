@@ -1,0 +1,44 @@
+Panels: []
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 0.5
+      Plane Cell Count: 10
+    - Class: rviz_default_plugins/Pose
+      Name: drone1
+      Enabled: true
+      Topic: {Value: /drone1/pose}
+      Color: 255; 25; 0
+      Shape: Axes
+      Axes Length: 0.2
+      Axes Radius: 0.01
+    - Class: rviz_default_plugins/Pose
+      Name: drone2
+      Enabled: true
+      Topic: {Value: /drone2/pose}
+      Color: 25; 255; 0
+      Shape: Axes
+      Axes Length: 0.2
+      Axes Radius: 0.01
+    - Class: rviz_default_plugins/Pose
+      Name: drone3
+      Enabled: true
+      Topic: {Value: /drone3/pose}
+      Color: 25; 0; 255
+      Shape: Axes
+      Axes Length: 0.2
+      Axes Radius: 0.01
+  Global Options:
+    Fixed Frame: world
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 4.0
+      Pitch: 0.6
+      Yaw: 0.8
+Window Geometry: {}

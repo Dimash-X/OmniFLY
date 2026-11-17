@@ -1,0 +1,16 @@
+/teleop:
+  ros__parameters:
+    frequency: 100
+    # Moves the SWARM CENTRE; every drone keeps its formation offset.
+    cmd_vel_world:
+      x_velocity: {axis: 5, max: 0.5, deadband: 0.1}   # m/s
+      y_velocity: {axis: 4, max: 0.5, deadband: 0.1}
+      z_velocity: {axis: 2, max: 0.5, deadband: 0.1}
+      yaw_velocity: {axis: 1, max: 0.5, deadband: 0.1} # rad/s
+      x_limit: [-1.0, 1.0]
+      y_limit: [-1.0, 1.0]
+      z_limit: [0.1, 2.0]
+    initial_position: [0.0, 0.0, 0.5]   # swarm centre at start (z = takeoff height)
+    takeoff_button: 7   # start
+    land_button: 6      # back
+    emergency_button: 1 # red

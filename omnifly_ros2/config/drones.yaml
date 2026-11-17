@@ -1,0 +1,47 @@
+# Replaces crazyflies.yaml. One ELRS TX module (serial port) per drone.
+robots:
+  drone1:
+    enabled: true
+    serial_port: /dev/ttyUSB0
+    initial_position: [0.0, 0.0, 0.0]     # also its formation slot (x, y) for teleop
+    type: omnifly_2p5
+    dry_run: true
+  drone2:
+    enabled: false
+    serial_port: /dev/ttyUSB1
+    initial_position: [0.0, -0.6, 0.0]
+    type: omnifly_2p5
+    dry_run: true
+  drone3:
+    enabled: false
+    serial_port: /dev/ttyUSB2
+    initial_position: [0.0, 0.6, 0.0]
+    type: omnifly_2p5
+    dry_run: true
+
+robot_types:
+  omnifly_2p5:                 # Kayoumini 2.5" + GOKU F405 AIO + DJI O4
+    motion_capture:
+      enabled: true
+      marker: omnifly_4marker  # see motion_capture.yaml
+      dynamics: omnifly
+    battery:                   # reserved: needs CRSF telemetry (not implemented yet)
+      voltage_warning: 7.2     # V, 2S HV
+      voltage_critical: 6.8
+
+# global settings (replaces the `all:` block)
+all:
+  controller:
+    use_origin_offset: false
+    takeoff_height: 0.5
+    climb_rate: 0.25
+    descend_rate: 0.15
+    hover_throttle: 0.35       # calibrate!
+    kp_xy: 0.5
+    kd_xy: 0.35
+    max_tilt: 0.25
+    pose_timeout: 0.3
+  warnings:                    # replaces server.yaml warnings
+    frequency: 1.0
+    motion_capture:
+      warning_if_rate_outside: [80.0, 120.0]
