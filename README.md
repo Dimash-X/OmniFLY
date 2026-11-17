@@ -20,8 +20,8 @@ Just as thousands of individual visual units contribute to an insect's perceptio
 **Many Small Eyes. One Shared Vision.**
 
 <p align="center">
-  <img src="omnifly.jpg" width="49%">
-  <img src="omnifly_wk.gif" width="49%">
+  <img src="omnifly.jpg" width="49%" alt="OmniFLY Drone">
+  <img src="omnifly_wk.gif" width="49%" alt="OmniFLY Working Animation">
 </p>
 
 ## Key Features
