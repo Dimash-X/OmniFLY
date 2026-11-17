@@ -20,9 +20,10 @@ Just as thousands of individual visual units contribute to an insect's perceptio
 **Many Small Eyes. One Shared Vision.**
 
 <p align="center">
-  <img src="omnifly.jpg" width="49%" alt="OmniFLY 3D Model">
-  <img src="omnifly_wk.gif" width="49%" alt="OmniFLY Working Animation">
+  <img src="omnifly.jpg" width="49%">
+  <img src="omnifly_wk.gif" width="49%">
 </p>
+
 ## Key Features
 
 - **Distributed Aerial Vision** – Multiple drones observe different areas of the environment simultaneously, creating a broader field of view.
