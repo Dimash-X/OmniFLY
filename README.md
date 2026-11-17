@@ -118,3 +118,33 @@ Dedicated to the simulation component of OmniFLY. It contains simulation-related
 ### Development Approach
 
 The modular structure is intended to keep the core software, ROS 2 integration, and simulation components organized independently, making the project easier to maintain, develop, and extend.
+## Future Improvements
+
+- Develop multi-drone coordination capabilities to enable multiple aerial units to operate collaboratively.
+- Implement image stitching and panoramic reconstruction to combine images captured from different drones into a unified visual representation.
+- Explore real-time image synchronization and data sharing between individual drones.
+- Improve relative positioning and spatial awareness to support more accurate collaborative imaging.
+- Optimize camera calibration, image alignment, and processing algorithms for improved visual consistency.
+- Explore autonomous flight strategies for coordinated environmental coverage.
+- Investigate scalable communication and processing architectures to support larger drone formations.
+- Improve simulation and testing environments for reliable multi-drone operation.
+
+## Additional Projects
+
+Explore more robotics, mechatronics, autonomous systems, and 3D-printing projects on my [GitHub profile](https://github.com/Dimash-X).
+
+## Contact
+
+For questions, suggestions, or project improvements, feel free to contact me at [xomidad@gmail.ru](mailto:xomidad@gmail.ru).
+
+## Disclaimer
+
+This project is developed for educational and experimental purposes. The OmniFLY concept explores distributed aerial vision using multiple small camera-equipped drones.
+
+Anyone building, modifying, or operating the system is responsible for ensuring safe mechanical assembly, electrical connections, flight operations, and compliance with applicable aviation regulations.
+
+The author is not responsible for any damage, injury, or losses resulting from the construction or use of this project.
+
+## License
+
+The licensing terms for this project are specified in the [LICENSE](LICENSE) file.
