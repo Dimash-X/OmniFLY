@@ -93,9 +93,6 @@ OmniFLY/
 │   ├── omnifly/        # ROS 2 package source code
 │   ├── resource/       # Package resources
 │   ├── test/           # Package tests
-│   ├── README.md
-│   ├── package.xml
-│   └── setup.py
 │
 └── omnifly_sim/
     ├── config/         # Simulation configuration
