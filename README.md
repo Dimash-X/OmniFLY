@@ -54,7 +54,7 @@ The 3D model was prepared in **3MF format**, containing the complete project geo
 |---|---|
 | `OmniFLY.3mf` | Complete 3D model of the micro-drone, including its structural components and camera housing. |
 
-The 3MF file is available in the `3D-Models` directory.
+The 3MF file is available in the `CAD` directory.
 
 ---
 
